@@ -2,17 +2,19 @@
     display: flex;
     padding: 20px;
     justify-content: center;
+    
     .content{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // border: solid;
         width: 50%;
         align-items: center;
+
         h2{
             text-transform: uppercase;
             margin-bottom: 50px;
         }
+
         p{
             text-align: center;
             margin: 10px 0;
