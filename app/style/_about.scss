@@ -2,7 +2,8 @@
     display: flex;
     padding: 20px;
     justify-content: center;
-    
+    background-color: $about-background-color;
+    color: white;
     .content{
         display: flex;
         flex-direction: column;
@@ -21,4 +22,8 @@
             font-size: 1.2rem;
         }
     }
+    &:after{
+        @include triangle(white)
+    }
+
 }

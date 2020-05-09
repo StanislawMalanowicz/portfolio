@@ -1,3 +1,4 @@
+
 html{
     font-size: 70%;
     @include media-breakpoint-up(sm) { 
@@ -5,7 +6,8 @@ html{
      }
 }
 body{
-    background: rgb(207, 222, 240);
+    background: $body-background-color;
+    font-family: sans-serif;
 }
 h2{
     font-size: 2rem;
@@ -14,15 +16,19 @@ p{
     font-size: 1em;
 }
 
+
 section{
     // border: solid gray;
-    height: 96vh;
-    margin: 2vh 0;
+    // position: relative;
+    height: 100vh;
+    // margin: 2vh 0;
     background-color: rgb(255, 255, 255);
     // box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     border-radius: 1%;
+    
 }
 .border-red{
     border: solid red ;
 }
+
 

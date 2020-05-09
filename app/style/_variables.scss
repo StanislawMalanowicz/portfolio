@@ -1,1 +1,15 @@
-$navbar-color: rgb(175, 230, 250);
+$navbar-color: rgb(248, 146, 12);
+$body-background-color: rgb(87, 99, 104);
+$orange-color: rgb(242, 127, 62);
+$about-background-color: rgb(216, 199, 107);
+$skills-background-color: rgb(242, 130, 66);
+@mixin triangle($color) {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 86px solid $color;
+}
