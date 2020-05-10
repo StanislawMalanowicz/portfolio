@@ -14,9 +14,4 @@
 
 ## Content
 
-* Webpack 4
-* ES6 support
-* Sass support
-* Hot Module Reload - browser reloads whenever a js or scss file changes
-
-* You can change the port on webpack.config.js on line 22
+* My Personal portfolio
