@@ -17,13 +17,13 @@ function scroll(e) {
 $('a[href*="#"]').click(scroll); 
 
 // ************** hide navigation *************
-// let prevScrollpos = window.pageYOffset;
-// window.addEventListener('scroll', function(){
-//     const currentScrollpos = window.pageYOffset;
-//     if(prevScrollpos > currentScrollpos) {
-//         document.getElementById('navbar').style.top = "0";
-//     }else{
-//         document.getElementById("navbar").style.top = "-100px";
-//     }
-//     prevScrollpos = currentScrollpos;
-// })
+let prevScrollpos = window.pageYOffset;
+window.addEventListener('scroll', function(){
+    const currentScrollpos = window.pageYOffset;
+    if(prevScrollpos > currentScrollpos) {
+        document.getElementById('navbar').style.top = "0";
+    }else{
+        document.getElementById("navbar").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollpos;
+})

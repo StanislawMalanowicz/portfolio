@@ -7,14 +7,16 @@
         align-items: center;
         top:40%;
         transform: translateY(-50%);
+        padding-top: 300px;
         .title{
             color: $orange-color;
             font-family: Sans-Serif;
             font-weight: bold;
+            margin-bottom: 250px;
         }
         .arrow-down{
             position: relative;
-            top: 50px;
+            bottom: 150px;
             transition: .5s;
             color: gray;
             i{
@@ -25,8 +27,11 @@
                 color: black;
             }
         }
+        .icons{
+            opacity: .6;
+        }
     }
     &:after{
-        @include triangle(white)
+        @include triangle(white);
     }
 }
