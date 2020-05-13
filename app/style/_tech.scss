@@ -1,4 +1,33 @@
 #tech{
     background-color: black;
     color: $orange-color;
+    .section-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .current-tech, .learning-tech{
+            margin: 30px;
+            // border: solid;
+            height: 30vh;
+        }
+        h2,p{
+            font-weight: bold;
+
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+        p{
+            margin: 5px;
+        }
+    }
+    .section-title{
+        transform: translateY(-45px);
+        color: white;
+    }
+    &:after{
+           @include triangle(black)
+       }
 }

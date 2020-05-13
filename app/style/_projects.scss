@@ -1,0 +1,64 @@
+#projects{
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    min-height: 100vh;
+    .project-box{
+        // box-sizing: border-box;
+        background-color: $about-background-color;
+        width: 400px;
+        height: 200px;
+        border: solid;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px;
+        .project-title{
+          // border: solid red;
+          margin-top:auto;
+          // text-align: center;
+        //   display: flex;
+        font-size: 1.4rem;
+        }
+        .project-description{
+            margin: 20px;
+        }
+        .demo, .github{
+          border: solid;
+          min-width: 30%;
+          margin: 5%;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          transition: .2s;
+          background-color: $skills-background-color;
+          &:hover{
+              color: $skills-background-color;
+              background-color: black;
+          }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
