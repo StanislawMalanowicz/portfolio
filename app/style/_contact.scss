@@ -1,7 +1,9 @@
 .contact-element{
     // height: 100px;
     // width: 100%;
-    // border: blue solid;
+    border: blue solid;
+    // z-index: -1
+    visibility: hidden;;
     color: white;
     position: fixed;
     left: 50%;
@@ -11,9 +13,12 @@
     display: flex;
     justify-content:space-between;
     .left-icons, .right-icons{
+        min-width: 3rem;
+        visibility: visible;
         // height: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         // border: red solid;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 5px ;
@@ -21,8 +26,27 @@
         .social-icon{
             margin:  30px 10px;
             cursor: pointer;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
+            transition: .3s;
+            &:hover{
+                transform: scale(1.4);
+            }
         }
+        .cv{
+            font-size: 1rem;
+        }
+        // .cv-container{
+        //     border: solid red;
+        //     width: 10px;
+        //     height: auto;
+        //     cursor: pointer;
+
+        //     .cv-foto{
+        //         height: auto;
+        //         width: 10%;
+        //         border-radius: 10px;
+        //     }
+        // }
     }
  
    

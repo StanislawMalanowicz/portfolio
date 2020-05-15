@@ -1,45 +1,99 @@
 #about{
     background-color: $about-background-color;
     color: white;
+    border: solid red;
+    display: flex;
+    align-items: center;
     .section-content{
-        width: 100%;
-        height: 100%;
         display: flex;
-         justify-content: center;
-         align-items: center;
-         .content, .photo-container{
-             margin: 30px;
-         }
-         .content{
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-             width: 30%;
-             align-items: center;
-           
-             p{
-                 text-align: center;
-                 margin: 10px 0;
-                 font-size: 1.2rem;
-             }
-         }
-         .photo-container{
-             // border: solid red;
-             width: 250px;
-             height: 300px;
-             
-             .user-foto{
-                 width: 100%;
-                 height: 100%;
-             }
-         }
+        flex-direction: column;
+        // flex-direction: column-reverse;
+        // border: solid green;
+        // margin: 10px auto ;
+        // padding: 15px;
+        .content, .photo-container{
+            margin: 1rem;
+            // border: solid;
+        }
+        .content{
+            text-align: center;
+            border: solid;
+        }
+        .photo-container{
+            // width: auto;
+            max-width: 120px;
+            // height: auto;
+            margin: auto;
+            .user-foto{
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
-    .section-title{
-        color: $orange-color;
-        transform: translateY(-45px);
-    }
-    &:after{
-        @include triangle($about-background-color)
-    }
-
+    @include media-breakpoint-up(md) {
+        border: none;
+        // display: flex;
+        // flex-direction: row;
+        .section-content{
+            flex-direction: row;
+            .photo-container{
+                width: 150px;
+                height: auto;
+                .user-foto{
+                    width: 250%;
+                }
+            }
+        }
+     }
 }
+
+
+// background-color: $about-background-color;
+//     color: white;
+//     .content{
+//         text-align: center;
+//     }
+//     // .section-content{
+//     //     display: flex;
+//     //     flex-direction: column;
+//     // }
+//     @include media-breakpoint-up(md) { 
+//         border: solid red;
+
+//     .section-content{
+//         // border: solid;
+//         padding: 0 15%;
+//         width: 100%;
+//         height: 100%;
+//         flex-direction: row;
+//         justify-content: center;
+//         align-items: center;
+//         .content, .photo-container{
+//              margin: 30px;
+//             }
+//             .content{
+//                 // border: solid;
+//                 flex-grow: 2;
+//                 text-align: left;
+           
+//              p{
+//                 //  text-align: center;
+//                  margin: 10px 0;
+//                  font-size: 1.2rem;
+//              }
+//          }
+//          .photo-container{
+//              border: 10px solid black;
+//              border-radius: 10px;
+            
+             
+//          }
+//     }
+//     // .section-title{
+//     //     color: $orange-color;
+//     //     transform: translateY(-45px);
+//     // }
+//     &:after{
+//         @include triangle($about-background-color)
+//     }
+//      }
