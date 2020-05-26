@@ -17,16 +17,26 @@ function scroll(e) {
 $('a[href*="#"]').click(scroll); 
 
 // ************** hide navigation *************
-let prevScrollpos = window.pageYOffset;
-window.addEventListener('scroll', function(){
-    const currentScrollpos = window.pageYOffset;
-    if(prevScrollpos > currentScrollpos) {
-        document.getElementById('navbar').style.top = "0";
-    }else{
-        document.getElementById("navbar").style.top = "-100px";
-    }
-    prevScrollpos = currentScrollpos;
-})
+// let windowWidth ;
+// window.addEventListener('resize', function(){
+//   windowWidth = window.innerWidth
+//   // console.log(windowWidth)
+//   if(windowWidth < 768){
+//     console.log('desktop')
+//     let prevScrollpos = window.pageYOffset;
+//     window.addEventListener('scroll', function(){
+//         const currentScrollpos = window.pageYOffset;
+//         if(prevScrollpos > currentScrollpos) {
+//             document.getElementById('navbar').style.top = "0";
+//         }else{
+//             document.getElementById("navbar").style.top = "-100px";
+//         }
+//         prevScrollpos = currentScrollpos;
+//     })
+
+//   }
+// })
+
 
 
 const closeButton = document.querySelector('.close-btn');
