@@ -4,15 +4,19 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 0;
+    height: auto;
     min-height: 100vh;
+    padding-top: 10vh;
+    .section-title{
+        color: $orange-color;
+    }
     .project-box{
         // box-sizing: border-box;
         background-color: $about-background-color;
         width: 400px;
         height: 200px;
-        border: solid;
-        margin: auto;
+        border: solid ;
+        margin: 5px auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

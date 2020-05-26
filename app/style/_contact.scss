@@ -1,7 +1,7 @@
 .contact-element{
     // height: 100px;
     // width: 100%;
-    border: blue solid;
+    // border: blue solid;
     // z-index: -1
     visibility: hidden;;
     color: white;
@@ -23,6 +23,10 @@
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 5px ;
         margin: 0 1%;
+        a {
+            color: inherit; /* blue colors for links too */
+            text-decoration: inherit; /* no underline */
+          }
         .social-icon{
             margin:  30px 10px;
             cursor: pointer;

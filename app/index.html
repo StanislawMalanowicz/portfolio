@@ -8,18 +8,40 @@
     <body data-spy="scroll" data-target="#navbar">
         <div class="contact-element container">
             <div class="left-icons">
-                <i class="fab social-icon fa-2x fa-instagram"></i>
+                
                 <i class="social-icon cv">c.v.</i>
-                <i class="fab social-icon fa-2x fa-facebook"></i>
-               
+
+                <div class="email-icon">
+                    <i class="social-icon far fa-2x fa-envelope"></i>
+                </div>
+                
+                
             </div>
             <div class="right-icons">
-                <i class="fab social-icon fa-2x fa-instagram"></i>
-                <i class="fab social-icon fa-2x fa-twitter"></i>
-                <i class="fab social-icon fa-2x fa-facebook"></i>
+                <a target="_blank" href="https://www.linkedin.com/in/stanis%C5%82aw-malanowicz/">
+                    <i class="fab social-icon fa-2x fa-linkedin-in"></i>
+                </a>
+                <!-- <a target="_blank" href="https://www.instagram.com/hexendrummer/">
+                    <i class="fab  social-icon fa-2x fa-instagram"></i>
+                </a> -->
+                <!-- <i class="fab social-icon fa-2x fa-instagram"></i> -->
+                <a target="_blank" href="https://github.com/StanislawMalanowicz">
+
+                    <i class="fab social-icon fa-2x fa-github"></i>
+                </a>
             </div>
         </div>
     <div class="container relative">
+        <div class="email-address hide">
+            <a href="mailto:stanislaw.malanowicz86@gmail.com">stanislaw.malanowicz86@gmail.com</a>
+            <button class="close-email">X</button>
+        </div>
+        <div class="overlay">
+            <div class="cv-container">
+                <img src="./img/Stanisław Malanowicz-it-1.jpg" alt="">
+            </div>
+            <button class="close-btn">X</button>
+        </div>
         <div id="navbar" class="navbar navbar-expand-md navbar-light sticky-top">
             <div class="navbar-brand navi" href="#">logo</div>
         
@@ -49,50 +71,55 @@
         <!-- <div class="contact-element contact-element--right">contact right</div> -->
         <section id="welcome">
            
-            <div class="logo-container">
-                <img class="img-fluid logo" src="/img/logo.png" alt="moje logo" class="logo">
+            <div class="section-content">
+                <div class="logo-container">
+                    <img class="img-fluid logo" src="./img/logo.png" alt="moje logo" class="logo">
+                    <h2 class="title">Front-end developer</h2>
+                    <a class="arrow-down" href="#about"><i class="fas fa-arrow-down fa-3x"></i></a>
+                </div>
                 
-                <h2 class="title">Front-end developer</h2>
-                <a class="arrow-down" href="#about"><i class="fas fa-arrow-down fa-3x"></i></a>
-                <img class="img-fluid icons" src="/img/icons.png" alt="icons" class="icons">
+                
+                <div class="icons-container">
+                    <img class="img-fluid icons" src="./img/icons.png" alt="icons" class="icons">
+                </div>
             </div>
-            <h2 class="section-title">O mnie</h2>
         </section>
         <section id="about"> 
+            <h2 class="section-title">O mnie</h2>
             <div class="section-content">
 
                 <div class="content">
                     <h2>Cześć!</h2>
 
-                    <p>Nazywam się Staszek, Jestem  pełnym energii programistą. Miło iż chcesz mnie poznać.</p>
+                    <p>Nazywam się Staszek. Miło iż chcesz mnie poznać.</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloribus soluta provident rerum perspiciatis? Illo facilis laudantium minima ex, itaque assumenda! Voluptates corporis at laudantium quia ex veniam ullam cumque?</p> 
-                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloribus soluta provident rerum perspiciatis? Illo facilis laudantium minima ex, itaque assumenda! Voluptates corporis at laudantium quia ex veniam ullam cumque?</p> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloribus soluta provident rerum perspiciatis? Illo facilis laudantium minima ex, itaque assumenda! Voluptates corporis at laudantium quia ex veniam ullam cumque?
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloribus soluta provident rerum perspiciatis? Illo facilis laudantium minima ex, itaque assumenda! Voluptates corporis at laudantium quia ex veniam ullam cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloribus soluta provident rerum perspiciatis? Illo facilis laudantium minima ex, itaque assumenda! Voluptates corporis at laudantium quia ex veniam ullam cumque?</p> 
+             
                 </div> 
     
                 <div class="photo-container">
-                    <img class="user-foto" src="/img/staszek.png" alt="">
+                    <img class="user-foto" src="./img/staszek-lemmy.jpg" alt="">
                 </div>
             </div>
-            <!-- <h2 class="section-title">Umiejętności</h2> -->
         </section>
         <section id="skills"> 
             <div class="section-content">
+                <h2 class="section-title">Umiejętności</h2>
 
                 <div class="image-container">
-                    <img class="rwd-image" src="/img/phone-tablet-and-laptop.png" alt="">
+                    <img class="rwd-image" src="./img/phone-tablet-and-laptop.png" alt="">
                 </div>
     
                 <div class="content">
-                    <h2>Responsive Web Design</h2>
+                    <h2 class="title">Responsive Web Design</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi corrupti esse ratione quas quis laboriosam magni, quia laudantium aperiam eos?</p> 
                 </div>
             </div>
-            <h2 class="section-title">Technologie</h2>
         </section>
         <section id="tech"> 
             <div class="section-content">
+                <h2 class="section-title">Technologie</h2>
                 <div class="current-tech">
                     <h2>What am I familiar with?:</h2>
                     <p>JavaScript ES6+</p>
@@ -120,9 +147,9 @@
                     <p>WordPress</p>
                 </div>
             </div>
-            <h2 class="section-title">Projekty</h2>
         </section>
         <section id="projects">
+            <h2 class="section-title">Projekty</h2>
             <div class="project-box">
                 <h3 class="project-title">project title</h3>
                 <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus necessitatibus obcaecati sequi ipsa id aliquid?</p>

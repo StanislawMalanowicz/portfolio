@@ -1,23 +1,25 @@
 #about{
     background-color: $about-background-color;
     color: white;
-    border: solid red;
+    // border: solid red;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    
     .section-content{
+        margin: 10px;
         display: flex;
         flex-direction: column;
         // flex-direction: column-reverse;
         // border: solid green;
-        // margin: 10px auto ;
-        // padding: 15px;
+        
         .content, .photo-container{
             margin: 1rem;
-            // border: solid;
         }
         .content{
             text-align: center;
-            border: solid;
+            // border: solid;
         }
         .photo-container{
             // width: auto;
@@ -26,25 +28,46 @@
             margin: auto;
             .user-foto{
                 width: 100%;
-                height: 100%;
+                // height: 100%;
+                filter: grayscale(100%);
             }
         }
     }
-    @include media-breakpoint-up(md) {
-        border: none;
+    @include media-breakpoint-up(lg) {
+        // border: none;
         // display: flex;
-        // flex-direction: row;
+        // flex-direction: column;
         .section-content{
             flex-direction: row;
+            // border: red solid;
+            justify-content: center;
+            align-items: center;
+            // width: 100%;
+            height: auto;
+            .content{
+                // border: solid green;
+                // width: 400px;
+                text-align: left;
+                flex: 3 1 ;
+            }
             .photo-container{
-                width: 150px;
-                height: auto;
+                max-width: 200px;
+                margin: 10px;
+                // height: 100%;
+                // border: green solid;
+
+                flex: 1 1 ;
                 .user-foto{
-                    width: 250%;
+                    width: 100%;
+                    // height: 100%;
                 }
             }
         }
-     }
+    }
+    &:after{
+    @include triangle($about-background-color)
+    }
+    
 }
 
 

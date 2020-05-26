@@ -10,9 +10,9 @@ $projects-background-color:  rgb(128, 113, 108);
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%);
-    border-left: 3.3rem solid transparent;
-    border-right: 3.3rem solid transparent;
-    border-top: 45px solid $color;
+    transform: translateX(-50%) translateY(-40%);
+    border-left: 3.2rem solid transparent;
+    border-right: 3.2rem solid transparent;
+    border-top: 2.6rem solid $color;
     z-index: 10;
 }

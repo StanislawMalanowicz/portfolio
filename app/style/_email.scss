@@ -1,0 +1,36 @@
+.email-address{
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    // right: 0;
+    transform: translateX(-50%) ;
+    // transform: 
+    z-index: 1300;
+    // width: 25rem;
+    // max-width: 40vw;
+    padding: 10px;
+    height: 12vh;
+    font-size: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 10px;
+    color: white;
+    transition: .4s;
+    a{
+        color: white;
+    }
+    .close-email{
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        // background-color: rgba(0, 0, 0, 1);;
+        // color: white;
+    }
+}
+.hide{
+    transform: translateX(-200vw);
+}

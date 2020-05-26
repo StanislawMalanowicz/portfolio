@@ -29,7 +29,9 @@ section{
     background-color: rgb(255, 255, 255);
     // box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     // border-radius: 1%;
-    
+    @include media-breakpoint-up(lg) {
+        padding: 0 7vw;
+    }
 }
 .border-red{
     border: solid red ;
@@ -38,8 +40,14 @@ section{
     filter: brightness(0) invert(1);
 }
 .section-title{
-    text-align: center;
+    // text-align: center;
     transform: translateY(-20px);
     font-weight: bold ;
-   
+    // border: solid;
+    color: black;
+    position: absolute;
+    // margin: 0 auto ;
+    z-index: 99;
+    top: 0;
+    transform: translateY(-150%);
 }
